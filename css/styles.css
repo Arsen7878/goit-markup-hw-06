@@ -225,10 +225,6 @@ input {
   padding-bottom: 200px;
   text-align: center;
 
-  
-  
-  
-  
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -940,6 +936,7 @@ margin-bottom: 9px;
   margin-bottom: 10px ;
 }
 
+/* Позиционирование инпутом и лейблов модального окна */
 .form-label {
   display: flex;
   width: 100%;
@@ -1007,7 +1004,7 @@ margin-bottom: 9px;
   border-color: var(--link-hover-focus-web-color)
 }
 
-
+/* Оформление плейсхолдера "Коментариев" */
 .form-item textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -1031,6 +1028,7 @@ margin-bottom: 9px;
   overflow: hidden;
 }
 
+/* !Чекбокс */
 .checkbox {
   
   display: flex;
@@ -1041,7 +1039,7 @@ margin-bottom: 9px;
 }
 
 
-
+/* Оформление лейбла чекбокса */
 .checkbox-label {
   position: relative;
   display: flex;
@@ -1055,7 +1053,7 @@ margin-bottom: 9px;
 }
 
 
-
+/* Оформление квадратика для чекбокса */
 .icon-check {
   margin-right: 7px;
   border-color: var(--primary-text-color);
@@ -1064,21 +1062,17 @@ margin-bottom: 9px;
   border-radius: 2px;
   
   fill: var(--primary-background-color);
-  
-  
 }
 
+/* Оформление кастомного чекбокса при чекте */
 .checkbox-input:checked + .icon-check {
   background-color: var(--link-hover-focus-web-color);
   background-origin: border-box;
   border-color: transparent;
+  border: none;
 }
 
-
-
-
-
-
+/* Оформление "Условий договора" */
 .checkbox-label a {
   color: var(--link-hover-focus-web-color);
 }
@@ -1107,16 +1101,18 @@ button[type='submit'] {
   transition: background-color 250ms var(--animation-timing-function);
   
 }
-
+/* Фон для кнопок отправки в модальном окне и футере */
 button[type='submit']:hover,
 button[type='submit']:focus {
   background-color: #188CE8;
 }
 
+/* !Блок "Подписка" */
 .subscription {
   margin-left: 93px;
 }
 
+/* Заголовок блока "Подписка" */
 .sub-title{
   display: block;
   margin-bottom: 20px;
@@ -1130,7 +1126,7 @@ button[type='submit']:focus {
 
 }
 
-
+/* Инпут футера */
 .sub-input {
   width: 358px;
   height: 50px;
@@ -1155,6 +1151,7 @@ button[type='submit']:focus {
   border-color: var(--link-hover-focus-web-color);
 }
 
+/* Плейсхолдер тнпута футера */
 .sub-input::placeholder {
  
   font-weight: 400;
@@ -1170,7 +1167,7 @@ button[type='submit']:focus {
 }
 
 
-
+/* Позиционирование "самолёта" */
 .icon-plane {
   position: absolute;
   top: 13px;

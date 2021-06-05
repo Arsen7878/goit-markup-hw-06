@@ -10,7 +10,6 @@
 /* Цвет социальных ссылок и обводки #AFB1B8; */
 /* timing-cubic */
 
-
 /* Утилиты для страниц */
 :root {
   --primary-text-color: #212121;
@@ -22,7 +21,7 @@
   --logo-color: #000000;
   --footer-link-text-color: rgba(255, 255, 255, 0.6);
   --galery-background: #eeeeee;
-  --socil-links-color: #AFB1B8;
+  --socil-links-color: #afb1b8;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Тело страницы */
@@ -31,9 +30,7 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  
 }
-
 
 /* Убираем ненависные точки у списков */
 .list {
@@ -50,7 +47,6 @@ body {
   margin: 0 auto;
 }
 
-
 /* Вертикальные падинги для всех секций страниц */
 .section {
   padding-top: 94px;
@@ -58,7 +54,12 @@ body {
 }
 
 /* Обнуляем марджины заголовком, абзацев и списков */
-h1,h2,h3,h4,p,ul {
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -86,18 +87,15 @@ input {
   left: 0px;
   width: 100%;
   min-height: 80px;
-  z-index: 3;
+  z-index: 2;
   background-color: var(--primary-background-color);
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
   border: transparent;
-  
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  
-
 }
 /* Логотип */
 .logo {
@@ -121,24 +119,20 @@ input {
 }
 
 .nav {
-  
   display: flex;
   margin-left: 93px;
-  
 }
 
 .nav-item {
   position: relative;
-  
+
   display: block;
   padding: 32px 0;
 }
 
-
 /* Маржины навигационных ссылок */
 .nav .nav-item + .nav-item {
   margin-left: 50px;
-  
 }
 
 .nav .current {
@@ -146,15 +140,14 @@ input {
 }
 
 .nav .current::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   display: block;
-  width: 100%; 
+  width: 100%;
   height: 4px;
   background-color: var(--link-hover-focus-web-color);
   border-radius: 2px;
-  
 }
 
 /* Навигационные ссылки хедера */
@@ -178,18 +171,16 @@ input {
   color: var(--link-hover-focus-web-color);
 }
 
-
 /* Навигационные ссылки при ховере и фокусе */
 .header-page .link:focus,
 .header-page .link:hover {
   color: var(--link-hover-focus-web-color);
-} 
+}
 
 /* Оборачиваю в div контакты хедера */
 .contacts-items {
   display: flex;
   margin-left: auto;
-  
 }
 
 .contacts-items .contacts-item + .contacts-item {
@@ -209,7 +200,6 @@ input {
 .contact-link {
   display: flex;
   align-items: center;
-
 }
 
 .icon-contacts {
@@ -220,7 +210,6 @@ input {
 
 /* Секция герой */
 .hero {
-  
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -229,16 +218,14 @@ input {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-photo.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background-photo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
   background-color: var(--secondary-background-color);
-  
 }
-
-
 
 /* Заголовок-герой */
 .title-hero {
@@ -285,14 +272,14 @@ input {
 
 /* Секция "Особенности" */
 /* Скрываем заголовок */
-  .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -308,7 +295,6 @@ input {
   margin-bottom: 30px;
 
   background-color: var(--single-background-color);
-
 }
 
 .features-list {
@@ -319,11 +305,9 @@ input {
   width: 270px;
 }
 
-
 .features-list-items + .features-list-items {
   margin-left: 30px;
 }
-
 
 /* Заголовок элемента списка особенностей */
 .features-title {
@@ -376,28 +360,24 @@ input {
   bottom: 0px;
   left: 0px;
   z-index: 1;
-    
+
   display: flex;
   width: 370px;
   height: 70px;
   justify-content: center;
-  align-items: center;  
-  
+  align-items: center;
+
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .activity-trumb-description {
-   
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-background-color);
-
 }
-
-
 
 /* Секция "Наша команда" */
 .team {
@@ -411,15 +391,15 @@ input {
 }
 
 .team-item {
-  
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
   width: 270px;
 }
 
 .team-item + .team-item {
-margin-left: 30px;
+  margin-left: 30px;
 }
 
 /* Имя */
@@ -429,7 +409,7 @@ margin-left: 30px;
 }
 
 .name {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -451,10 +431,7 @@ margin-bottom: 10px;
   justify-content: center;
   width: 206px;
   margin: 0 auto;
-
- 
 }
-
 
 /* Задаем марджины (НАПОМИНАНИЕ: СУТЬ СЕЛЕКТОРА - ПРИМЕНЯТЬ НА ВСЕХ КРОМЕ ПЕРВОГО) */
 .social-link + .social-link {
@@ -470,7 +447,7 @@ margin-bottom: 10px;
   height: 44px;
   color: var(--socil-links-color);
   border-radius: 50%;
-   /* Эффект перехода для соц ссылок членов команды при ховере и фокусе */
+  /* Эффект перехода для соц ссылок членов команды при ховере и фокусе */
 
   transition-property: background-color, color;
   transition-duration: 250ms;
@@ -488,7 +465,6 @@ margin-bottom: 10px;
 .social-link-item:focus {
   color: var(--primary-background-color);
   background-color: var(--link-hover-focus-web-color);
-  
 }
 
 /* Секция "Постоянные клиенты" */
@@ -496,7 +472,7 @@ margin-bottom: 10px;
 /* Стили заголовка */
 .clients-title {
   margin-bottom: 50px;
-  
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -527,7 +503,6 @@ margin-bottom: 10px;
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 /* Передаем текущий цвет на логотипы */
@@ -542,12 +517,10 @@ margin-bottom: 10px;
   border-color: var(--link-hover-focus-web-color);
 }
 
-
-
 /*! =======================ПОДВАЛ===================== */
 .footer-page {
-padding-top: 60px;
-padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--secondary-background-color);
   color: var(--primary-background-color);
@@ -580,7 +553,6 @@ padding-bottom: 60px;
   display: block;
   margin-bottom: 20px;
   text-decoration: none;
-  
 }
 
 /* Оформление адреса */
@@ -591,7 +563,7 @@ padding-bottom: 60px;
   line-height: 1.71;
 }
 .adress-title {
-margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .address {
@@ -610,7 +582,6 @@ margin-bottom: 9px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 /* Ссылки адреса при ховере и футере */
@@ -641,8 +612,6 @@ margin-bottom: 9px;
   flex-direction: column;
   margin-left: 70px;
 }
-
-
 
 .footer-social-links {
   display: flex;
@@ -676,10 +645,7 @@ margin-bottom: 9px;
 .footer-social-link-item:hover,
 .footer-social-link-item:focus {
   background-color: var(--link-hover-focus-web-color);
-
 }
-
-
 
 /* !============CТРАНИЦА ПОРТФОЛИО============================  */
 /* МЕИН */
@@ -688,12 +654,11 @@ margin-bottom: 9px;
   padding-top: 174px;
 }
 
-
 .filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -726,7 +691,8 @@ margin-bottom: 9px;
 .filter .button:hover {
   background-color: var(--link-hover-focus-web-color);
   color: var(--primary-background-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Создаем флекс-контейнер для элементов портфоли */
@@ -735,40 +701,33 @@ margin-bottom: 9px;
   flex-wrap: wrap;
   align-items: center;
   margin: -15px;
-
 }
 
 /* Отступы для элементов галереи и рамки */
 .galery-item {
-  
   width: 370px;
   margin: 15px;
-  
-  
-  
 }
 
 .galery-trumb {
   position: relative;
   overflow: hidden;
-    
 }
 
 .overlay-galery {
   position: absolute;
   bottom: 0px;
-  left: 0px; 
+  left: 0px;
   display: block;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  
+
   transform: translateY(100%);
-  
+
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: var(--animation-timing-function);
-
 }
 
 .overlay-galery > p {
@@ -783,24 +742,18 @@ margin-bottom: 9px;
 
 .galery-item:hover .overlay-galery {
   transform: translateY(0);
-  
 }
-
-
-
 
 /* Эффект тени при ховере */
 .galery-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
 
 /* Скрываем подчеркивание и цвет ссылок галереи */
 .galery .link {
   text-decoration: none;
   color: inherit;
-  
 }
 
 /* Задаём размер шрифта заголовкам галереи*/
@@ -827,9 +780,9 @@ margin-bottom: 9px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 24px;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 /*! ====================Модальное окно===================== */
@@ -850,7 +803,6 @@ margin-bottom: 9px;
   opacity: 0;
   pointer-events: none;
   visibility: visible;
-
 }
 
 /* можальное окно */
@@ -861,26 +813,26 @@ margin-bottom: 9px;
   z-index: 2;
 
   /* Анимация модального окна */
-  transform: translate(-50%, -50%) translateY(0%); 
+  transform: translate(-50%, -50%) translateY(0%);
   transition: transform 250ms var(--animation-timing-function);
-  
-  
+
   min-width: 528px;
   min-height: 581px;
-    
+
   background-color: var(--primary-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) translateY(200%);    
+  transform: translate(-50%, -50%) translateY(200%);
 }
 
 .close-button {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px ;
+  width: 30px;
   height: 30px;
   padding: 0px;
 
@@ -905,9 +857,7 @@ margin-bottom: 9px;
   left: 50%;
   transform: translate(-50%, -50%);
   fill: currentColor;
-  
 }
-
 
 /* !Form modal window */
 .form {
@@ -916,7 +866,6 @@ margin-bottom: 9px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px 0px;
-  
 }
 
 /* Заголовок формы модального окна */
@@ -933,7 +882,7 @@ margin-bottom: 9px;
 .form-item {
   position: relative;
   display: flex;
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
 }
 
 /* Позиционирование инпутом и лейблов модального окна */
@@ -941,34 +890,32 @@ margin-bottom: 9px;
   display: flex;
   width: 100%;
   flex-direction: column-reverse;
-  
+
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17 ;
+  line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
 }
 
 /* Инпуты формы модального окна */
 .form-input {
-  
   display: block;
   width: 100%;
   height: 40px;
   margin-top: 4px;
   padding-left: 42px;
-  
+
   border-width: 1px;
   border-style: solid;
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  
-  transition: border-color 250ms var(--animation-timing-function) ;
+
+  transition: border-color 250ms var(--animation-timing-function);
 }
 
 .form-label:focus-within .form-input {
   border-color: var(--link-hover-focus-web-color);
-  
 }
 
 .icon-input {
@@ -976,14 +923,12 @@ margin-bottom: 9px;
   bottom: 11px;
   left: 12px;
   fill: currentColor;
-  transition: fill 250ms var(--animation-timing-function) ;
-
+  transition: fill 250ms var(--animation-timing-function);
 }
 
 .form-label:focus-within + .icon-input {
   fill: var(--link-hover-focus-web-color);
 }
-
 
 .form-textarea {
   width: 448px;
@@ -991,17 +936,17 @@ margin-bottom: 9px;
   padding: 16px 12px;
   margin-top: 4px;
 
-  border-width: 1px ;
+  border-width: 1px;
   border-style: solid;
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
 
-  transition: border-color 250ms var(--animation-timing-function) ;
+  transition: border-color 250ms var(--animation-timing-function);
 }
 
 .form-label:focus-within .form-textarea {
-  border-color: var(--link-hover-focus-web-color)
+  border-color: var(--link-hover-focus-web-color);
 }
 
 /* Оформление плейсхолдера "Коментариев" */
@@ -1021,7 +966,7 @@ margin-bottom: 9px;
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -1030,14 +975,11 @@ margin-bottom: 9px;
 
 /* !Чекбокс */
 .checkbox {
-  
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  
 }
-
 
 /* Оформление лейбла чекбокса */
 .checkbox-label {
@@ -1049,9 +991,7 @@ margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
-  
 }
-
 
 /* Оформление квадратика для чекбокса */
 .icon-check {
@@ -1060,7 +1000,7 @@ margin-bottom: 9px;
   border-style: solid;
   border-width: 2px;
   border-radius: 2px;
-  
+
   fill: var(--primary-background-color);
 }
 
@@ -1074,6 +1014,8 @@ margin-bottom: 9px;
 
 /* Оформление "Условий договора" */
 .checkbox-label a {
+  display: block;
+  margin-left: 4px;
   color: var(--link-hover-focus-web-color);
 }
 
@@ -1097,14 +1039,13 @@ button[type='submit'] {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
-  
+
   transition: background-color 250ms var(--animation-timing-function);
-  
 }
 /* Фон для кнопок отправки в модальном окне и футере */
 button[type='submit']:hover,
 button[type='submit']:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 /* !Блок "Подписка" */
@@ -1113,7 +1054,7 @@ button[type='submit']:focus {
 }
 
 /* Заголовок блока "Подписка" */
-.sub-title{
+.sub-title {
   display: block;
   margin-bottom: 20px;
 
@@ -1123,7 +1064,6 @@ button[type='submit']:focus {
   text-transform: uppercase;
 
   color: var(--primary-background-color);
-
 }
 
 /* Инпут футера */
@@ -1143,7 +1083,7 @@ button[type='submit']:focus {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-    
+
   transition: border-color 250ms var(--animation-timing-function);
 }
 
@@ -1153,7 +1093,6 @@ button[type='submit']:focus {
 
 /* Плейсхолдер тнпута футера */
 .sub-input::placeholder {
- 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -1166,20 +1105,18 @@ button[type='submit']:focus {
   display: flex;
 }
 
-
 /* Позиционирование "самолёта" */
 .icon-plane {
   position: absolute;
   top: 13px;
   right: 28px;
   fill: var(--primary-background-color);
-
 }
 
 /* Стили для кнопки "Подписаться" */
 .form-subscription button[type='submit'] {
   padding-left: 29px;
   padding-right: 62px;
-  padding-top: 10px ;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
